@@ -90,10 +90,58 @@ http://localhost/learning_web_design/login.html
 
 If you import `database/seed.sql`:
 
-- Teacher: `teacher_demo` / `teacher123`
-- Student: `student_demo` / `student123`
+- Teacher: `Gina` / `123456`
+- Student: `Bibi` / `mynameisbibi`
 
 These accounts are intended only for local demonstration.
+
+## Screenshots
+
+### Role-Based Learning Experience
+
+The Learning Hub adapts its interface based on the authenticated user's role. Teachers can create and manage learning activities, while students access enrolled courses and assignments.
+
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Teacher Dashboard</strong><br><br>
+      <img src="docs/screenshots/teacher-dashboard.png" alt="Teacher dashboard with course management options">
+    </td>
+    <td width="50%">
+      <strong>Student Dashboard</strong><br><br>
+      <img src="docs/screenshots/student-dashboard.png" alt="Student dashboard showing enrolled courses">
+    </td>
+  </tr>
+</table>
+
+### Course Content Management
+
+Teachers can upload course-specific learning resources with a title, description, and file attachment.
+
+<img src="docs/screenshots/teacher-update-content.png" alt="Teacher course content upload interface">
+
+### Assignment Management
+
+Teachers can manage course assignments, access assignment files, and review student submissions.
+
+<img src="docs/screenshots/assignment-management.png" alt="Teacher assignment management interface">
+
+### Submission Workflow
+
+Students can submit assignment files, and instructors can review uploaded submissions from the teacher interface.
+
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Student Submission</strong><br><br>
+      <img src="docs/screenshots/student-submit.png" alt="Student assignment submission interface">
+    </td>
+    <td width="50%">
+      <strong>Teacher Submission Review</strong><br><br>
+      <img src="docs/screenshots/teacher-view-submission.png" alt="Teacher interface for reviewing student submissions">
+    </td>
+  </tr>
+</table>
 
 ## What I Focused On
 
