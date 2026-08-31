@@ -559,6 +559,20 @@ textarea {
     
 }
 
+.line-up
+{
+     width: 65%;
+    margin: 0 auto;
+}
+
+.course-selector 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
 
 
 /* submit-page*/
