@@ -97,9 +97,9 @@ These accounts are intended only for local demonstration.
 
 ## Screenshots
 
-### Role-Based Learning Experience
+### Role-Based Experience
 
-The Learning Hub adapts its interface based on the authenticated user's role. Teachers can create and manage learning activities, while students access enrolled courses and assignments.
+The interface adapts to the authenticated user's role. Teachers can create and manage learning activities, while students access enrolled courses, course content, and assignments.
 
 <table>
   <tr>
@@ -114,34 +114,61 @@ The Learning Hub adapts its interface based on the authenticated user's role. Te
   </tr>
 </table>
 
-### Course Content Management
 
-Teachers can upload course-specific learning resources with a title, description, and file attachment.
+### Teacher Course and Assignment Management
+
+Teachers can upload course resources, create assignments, review existing assignments, and access student submissions.
 
 <img src="docs/screenshots/teacher-update-content.png" alt="Teacher course content upload interface">
-
-### Assignment Management
-
-Teachers can manage course assignments, access assignment files, and review student submissions.
-
-<img src="docs/screenshots/assignment-management.png" alt="Teacher assignment management interface">
-
-### Submission Workflow
-
-Students can submit assignment files, and instructors can review uploaded submissions from the teacher interface.
 
 <table>
   <tr>
     <td width="50%">
-      <strong>Student Submission</strong><br><br>
-      <img src="docs/screenshots/student-submit.png" alt="Student assignment submission interface">
+      <strong>Upload Assignment</strong><br><br>
+      <img src="docs/screenshots/teacher-upload-assignment.png" alt="Teacher assignment upload form">
     </td>
     <td width="50%">
-      <strong>Teacher Submission Review</strong><br><br>
-      <img src="docs/screenshots/teacher-view-submission.png" alt="Teacher interface for reviewing student submissions">
+      <strong>Manage Assignments</strong><br><br>
+      <img src="docs/screenshots/teacher-view-uploaded-assignments.png" alt="Teacher assignment management interface">
     </td>
   </tr>
 </table>
+
+
+### Student Learning and Submission Workflow
+
+Students can select a course, access available learning resources and assignments, and submit assignment files.
+
+<table>
+  <tr>
+    <td width="50%">
+      <strong>View Course Content</strong><br><br>
+      <img src="docs/screenshots/student-view-content.png" alt="Student course content interface">
+    </td>
+    <td width="50%">
+      <strong>View and Submit Assignments</strong><br><br>
+      <img src="docs/screenshots/student-view-submit-assignment.png" alt="Student assignment interface">
+    </td>
+  </tr>
+</table>
+
+Students submit files through the assignment submission workflow.
+
+<img src="docs/screenshots/student-submit.png" alt="Student assignment submission form">
+
+
+### Teacher Submission Review
+
+Submitted work can be reviewed through the teacher interface, completing the assignment workflow.
+
+<img src="docs/screenshots/teacher-view-submission.png" alt="Teacher reviewing student submissions">
+
+
+### Additional Feature: Rule-Based Chatbot
+
+A lightweight rule-based chatbot provides quick responses to common questions about the Learning Hub, including supported file formats.
+
+<img src="docs/screenshots/rule-based-chatbot.png" alt="Rule-based Learning Hub chatbot">
 
 ## What I Focused On
 
