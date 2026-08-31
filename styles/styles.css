@@ -464,10 +464,14 @@ textarea {
 
 
 #course-select-for-assignment
+
 {
     display: flex;
-    flex-direction: row;
-    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 2rem;
     
 }
 
@@ -553,9 +557,11 @@ textarea {
 #course-select-for-content
 {
     display: flex;
-    flex-direction: row;
-    gap: 0.25rem;
-    
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 2rem;
     
 }
 
@@ -565,14 +571,7 @@ textarea {
     margin: 0 auto;
 }
 
-.course-selector 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
+
 
 
 /* submit-page*/
