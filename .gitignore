@@ -1,0 +1,20 @@
+# Local database configuration
+/api/db.php
+
+# Runtime uploads
+/uploads/*
+!/uploads/.gitkeep
+/assignment-uploads/*
+!/assignment-uploads/.gitkeep
+/submits/*
+!/submits/.gitkeep
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp

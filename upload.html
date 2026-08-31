@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub</title>
+</head>
+
+<link rel="stylesheet" href="styles/styles.css">
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script src="scripts/upload.js"></script>
+<script src="scripts/chatbot.js"></script>
+
+<body>
+     <nav class="header">
+
+    <a href="index.html">HOME</a>
+
+    <a href="nav-resources.html">CONTENT</a>
+
+    <a href="nav-assignment.html">ASSIGNMENT</a>
+
+    <a href="createcourse.html" class="teacher-only">
+        CREATE COURSE
+    </a>
+
+    <a href="api/logout.php">LOG OUT</a>
+
+</nav>
+    
+    <main class="upload-page-container">
+        <section class="upload-upload-card">
+
+    
+        <div class="upload-card-heading">
+        <h1>UPLOAD COURSE CONTENT</h1>
+        <p>Add the file information and select a file to upload. </p>
+        </div>
+
+    
+        <form id="submit-content-form">
+        <div class="upload-drop-down">
+            <label for="course-option">Please Select a Course: </label>
+
+            <select id="course-option" name="course-id" required>
+                <option value=""disabled selected>Select a course</option>
+                </select>
+                </div>
+        
+
+        <div class="upload-form-group">
+        <label for="file-name"> File Name:</label>
+        <input required 
+        type="text" 
+        id="file-name" 
+        name="file-name"
+        placeholder="Enter the file name" >
+        </div>
+
+        <div class="upload-form-group">
+        <label for="file-description">File Description: </label>
+        <textarea
+        type="text" 
+        id="file-description" 
+        name="file-description"
+        placeholder="Enter the description of your uploaded file (optional)"></textarea>
+        </div>
+
+        <div class="upload-form-group">
+        <label  for="uploaded-file">Choose a File:</label>
+        <input 
+        multiple
+        type="file" 
+        name="uploaded-file"
+        id="uploaded-file" 
+        accpet=".pdf,.doc,.docx,.ppt,.pptx.,.xls,.xlsx">
+        </div>
+
+        <div class="button-center">
+        <button type="button" id="upload-button">UPLOAD</button>
+        </div>
+
+    </form>
+    </section>
+    </main>
+        <div id="chatbot">
+
+                <div id="chatbot-conversation"></div>
+    
+                <img src="images/bot.jpg" class="bot-image" alt="a bot photo">
+                <input type="text" id="chatbot-message" placeholder="Please type your question here">
+                
+                <button type="button" id="chatbot-button"> SEND </button>
+            </div>
+
+
+</body>
+</html>

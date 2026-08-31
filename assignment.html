@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub</title>
+</head>
+
+<link rel="stylesheet" href="styles/styles.css">
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script src="scripts/assignment.js"></script>
+<script src="scripts/chatbot.js"></script>
+
+<body>
+      <nav class="header">
+
+    <a href="index.html">HOME</a>
+
+    <a href="nav-resources.html">CONTENT</a>
+
+    <a href="nav-assignment.html">ASSIGNMENT</a>
+
+    <a href="createcourse.html" class="teacher-only">
+        CREATE COURSE
+    </a>
+
+    <a href="api/logout.php">LOG OUT</a>
+
+</nav>
+
+    <main class="assignment-form-card">
+        <form id="assignment-form">
+            <h1>UPLOAD ASSIGNMENT</h1>
+            <p>Add the assignment information and select a file to upload.</p>
+
+            <label for="assignment-dropdown">Please Select a Course: </label>
+            <select required id="assignment-dropdown" name="assignment-course">Please Select a Course: 
+            <option  value=""selected disabled>Select a course: </option></select>
+
+            <label for="assignment-name">Assignment File</label>
+            <input type="text" required placeholder="Enter the assignment name" id="assignment-name" name="name">
+
+            <label for="assignment-description">Assignment Description</label>
+                <input type="text" placeholder="Enter the description of the assignment (optional)" id="assignment-description" name="description">
+
+            <label for="assignment-file-upload">Choose a File</label>
+            <input multiple type="file" accept=".pdf,.doc,.docx,.ppt,.pptx.,.xls,.xlsx" id="assignment-file-upload" name="assignment-file">
+
+            <button type="button" id="assignment-button">UPLOAD</button>
+
+            </form>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div id="chatbot">
+
+                <div id="chatbot-conversation"></div>
+    
+                <img src="images/bot.jpg" class="bot-image" alt="a bot photo">
+                <input type="text" id="chatbot-message" placeholder="Please type your question here">
+                
+                <button type="button" id="chatbot-button"> SEND </button>
+            </div>
+</body>
+</html>
+    

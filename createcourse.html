@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script src="scripts/createcourse.js"></script>
+<script src="scripts/chatbot.js"></script>
+</head>
+<body>
+       <nav class="header">
+
+    <a href="index.html">HOME</a>
+
+    <a href="nav-resources.html">CONTENT</a>
+
+    <a href="nav-assignment.html">ASSIGNMENT</a>
+
+    <a href="createcourse.html" class="teacher-only">
+        CREATE COURSE
+    </a>
+
+    <a href="api/logout.php">LOG OUT</a>
+
+</nav>
+    <main>
+        
+
+        <section class="createcourse-page-container">
+
+            
+        
+            <form id="createcourse-form">
+            <h1 class="header-style">Create A New Course</h1>
+
+            <label for="new-course-name">Course Name:</label>
+            <input required type="text" id="new-course-name" name="new-course">
+
+            <label for="new-course-description">Course Description:</label>
+    
+            <textarea id="new-course-description" name="new-course-des" placeholder="Please enter the description of this course (optional)"></textarea>
+
+            <button type="button" id="new-course-submit-button">SUBMIT</button>
+
+            <div id="create-result"></div>
+            </form>
+        </section>
+        </main>
+  <div id="chatbot">
+
+                <div id="chatbot-conversation"></div>
+    
+                <img src="images/bot.jpg" class="bot-image" alt="a bot photo">
+                <input type="text" id="chatbot-message" placeholder="Please type your question here">
+                
+                <button type="button" id="chatbot-button"> SEND </button>
+            </div>
+            
+</body>
+</html>

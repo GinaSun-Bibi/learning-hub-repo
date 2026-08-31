@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning hub home</title>
+
+<link rel="stylesheet" href="styles/styles.css">
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script src="scripts/home.js"></script>
+<script src="scripts/chatbot.js"></script>
+</head>
+<body>
+  <nav class="header">
+
+    <a href="index.html">HOME</a>
+
+    <a href="nav-resources.html">CONTENT</a>
+
+    <a href="nav-assignment.html">ASSIGNMENT</a>
+
+    <a href="createcourse.html" class="teacher-only">
+        CREATE COURSE
+    </a>
+
+    <a href="api/logout.php">LOG OUT</a>
+
+</nav>
+
+    <main>
+        <section class="class-page container">
+
+            <div class="search-create-div">
+            <div class="search-div">
+            <label for="search-content"></label>
+            <input type="text" id="search-content"placeholder="Seach a course">
+            <button type="button" id="search-button">SEARCH </button>
+            </div>
+
+            
+
+            <div class="create-course-div">
+            <button type="submit" id="create-course-button" class="teacher-only"> CREATE A NEW COURSE</button>
+            </div>
+            </div>
+
+            <div class="course-enrolled-title">
+             <h1> COURSE ENROLLED</h1>
+             </div>
+           
+            <div id="class-list"></div>
+
+            <div class="course-controls">
+            <button type="button" id="go-back-button">
+            SHOW ALL COURSES
+            </button>
+            </div>
+           
+
+            </section>
+            </main>
+
+            <div id="chatbot">
+
+                <div id="chatbot-conversation"></div>
+    
+                <img src="images/bot.jpg" class="bot-image" alt="a bot photo">
+                <input type="text" id="chatbot-message" placeholder="Please type your question here">
+                
+                <button type="button" id="chatbot-button"> SEND </button>
+            </div>
+</body>
+</html>
