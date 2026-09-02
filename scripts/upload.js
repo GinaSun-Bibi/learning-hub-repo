@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
- fetch("/learning_web_design/api/getuser.php")
+ fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -23,7 +23,7 @@ $(document).ready(function(){
     console.error("Error: ", error);
 });
 
-fetch("/learning_web_design/api/getcourselist.php")
+fetch("./api/getcourselist.php")
 .then(function(response)
 {
     return response.json();
@@ -88,7 +88,7 @@ formData.append("uploaded_file", selectedFile);
 
 
 
-fetch("/learning_web_design/api/upload.php",
+fetch("./api/upload.php",
     {
        method: "POST",
 
