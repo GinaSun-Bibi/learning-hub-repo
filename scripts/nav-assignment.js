@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     });
 
-    fetch("/learning_web_design/api/getcourselist.php")
+    fetch("./api/getcourselist.php")
     .then(function(response){
         return response.json();
     })
@@ -43,7 +43,7 @@ $(document).ready(function(){
         console.error("Error: ", err); 
     }); 
 
-fetch("/learning_web_design/api/getuser.php")
+fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -80,7 +80,7 @@ fetch("/learning_web_design/api/getuser.php")
         return;
     }
 
-    fetch(`/learning_web_design/api/getassignment.php?course_id=${courseId}`)
+    fetch(`./api/getassignment.php?course_id=${courseId}`)
     .then(function(response){
         return response.json();
     })
