@@ -14,7 +14,7 @@ function changePermission(selectedRole)
 
 
     }
-    fetch("/learning_web_design/api/getuser.php")
+    fetch("./api/getuser.php")
 
     .then(function(response)
     {
@@ -72,7 +72,7 @@ function changePermission(selectedRole)
                 return;
             }
 
-        fetch("/learning_web_design/api/createcourse.php", 
+        fetch("./api/createcourse.php", 
             
             {method:"POST",
             headers: {"Content-Type":"application/json"},
