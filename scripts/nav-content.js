@@ -4,7 +4,7 @@ $("#content-button").on("click", function(){
     window.location.href="upload.html";
 })
 
-fetch("/learning_web_design/api/getuser.php")
+fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -26,7 +26,7 @@ fetch("/learning_web_design/api/getuser.php")
     console.error("Error: ", error);
 });
 
-fetch("/learning_web_design/api/getcourselist.php")
+fetch("./api/getcourselist.php")
 .then(function(response)
 {
     return response.json();
@@ -63,7 +63,7 @@ $("#confirm-button").on("click", function(){
     }
     console.log(courseId); 
 
-    fetch(`/learning_web_design/api/getlist.php?course_id=${courseId}`)
+    fetch(`./api/getlist.php?course_id=${courseId}`)
     .then(function(response){
         return response.json();
     })
