@@ -47,7 +47,7 @@ if (password==="")
 
 
 
-fetch("/learning_web_design/api/login.php", 
+fetch("./api/login.php", 
     {method: "POST",
 
     headers:{"Content-Type": "application/json"},
