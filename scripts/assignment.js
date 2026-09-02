@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-fetch("/learning_web_design/api/getcourselist.php")
+fetch("./api/getcourselist.php")
     .then(function(response)
     {
         return response.json(); 
@@ -67,7 +67,7 @@ $("#assignment-button").on("click", function(){
 
     
 
-    fetch("/learning_web_design/api/assignment.php", {method:"POST", body:formData})
+    fetch("./api/assignment.php", {method:"POST", body:formData})
     .then(function(response){
         return response.json();
     })
@@ -93,7 +93,7 @@ $("#assignment-button").on("click", function(){
     
 
 
-fetch("/learning_web_design/api/getuser.php")
+fetch("./api/getuser.php")
 
 .then(function(response)
 {
