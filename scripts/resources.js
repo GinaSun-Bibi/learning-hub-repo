@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  fetch("/learning_web_design/api/getuser.php")
+  fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         return;
     }
-fetch("/learning_web_design/api/getList.php?course_id=" + courseId)
+fetch("./api/getList.php?course_id=" + courseId)
 .then(function(response){
 
     return response.json();
