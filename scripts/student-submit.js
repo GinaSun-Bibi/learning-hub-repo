@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-fetch("/learning_web_design/api/getuser.php")
+fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -58,7 +58,7 @@ $("#submit-button").on("click", function(){
 
 
 
- fetch("/learning_web_design/api/student-submit.php",
+ fetch("./api/student-submit.php",
 
  {
        method: "POST",
