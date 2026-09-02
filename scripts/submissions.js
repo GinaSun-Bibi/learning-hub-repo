@@ -12,7 +12,7 @@ $(document).ready(function()
         return;
     }
 
-    fetch(`/learning_web_design/api/getsubmissions.php?assignment_id=${assignmentId}`)
+    fetch(`./api/getsubmissions.php?assignment_id=${assignmentId}`)
 
     .then(function(response)
     {
