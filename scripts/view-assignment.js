@@ -3,7 +3,7 @@ $(document).ready(function(){
     let currentRole ="";
     $(".assignment-table").hide();
 
-fetch("/learning_web_design/api/getuser.php")
+fetch("./api/getuser.php")
 
 .then(function(response)
 {
@@ -37,7 +37,7 @@ const parm = new URLSearchParams(window.location.search);
 const courseId = parm.get("id"); 
 
 
-fetch(`/learning_web_design/api/getassignment.php?course_id=${courseId}`)
+fetch(`./api/getassignment.php?course_id=${courseId}`)
 .then(function(response){
     return response.json();
 })
