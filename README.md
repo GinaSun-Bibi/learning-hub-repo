@@ -161,7 +161,21 @@ Students submit files through the assignment submission workflow.
 
 Submitted work can be reviewed through the teacher interface, completing the assignment workflow.
 
-<img src="docs/screenshots/teacher-view-submission.png" alt="Teacher reviewing student submissions">
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Teacher Dashboard</strong><br><br>
+     <img src="docs/screenshots/teacher-view-submission.png" alt="Teacher reviewing student submissions">
+    </td>
+    <td width="50%">
+      <strong>Student Dashboard</strong><br><br>
+      <img src="docs/screenshots/teacher-view-uploaded-assignments.png" alt="Teacher assignment management interface">
+    </td>
+  </tr>
+</table>
+
+
+   
 
 
 ### Additional Feature: Rule-Based Chatbot
